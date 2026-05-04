@@ -18,7 +18,7 @@ docker run --rm -v "$(pwd)":/app augustosalazar/slim-mpi:2 python /app/generator
 or
 
 ```bash
-docker run --rm -v "%cd%\target:/app" augustosalazar/slim-mpi:2 python /app/generator.py
+docker run --rm -v "%cd%:/app" augustosalazar/slim-mpi:2 python /app/generator.py
 ```
 
 
@@ -40,7 +40,7 @@ docker run --rm -v "$(pwd)":/app augustosalazar/slim-mpi:2 python /app/baseline_
 or
 
 ```bash
-docker run --rm -v "%cd%\target:/app" augustosalazar/slim-mpi:2 python /app/baseline_secuencial.py
+docker run --rm -v "%cd%:/app" augustosalazar/slim-mpi:2 python /app/baseline_secuencial.py
 ```
 
 A sample of the output:
@@ -78,6 +78,6 @@ docker run --rm -v "$(pwd)":/app augustosalazar/slim-mpi:2 sh /app/run_all.sh
 or 
 
 ```bash
-docker run --rm -v "%cd%\target:/app" augustosalazar/slim-mpi:2 sh /app/run_all.sh
+docker run --rm -v "%cd%:/app" augustosalazar/slim-mpi:2 sh /app/run_all.sh
 ```
 
