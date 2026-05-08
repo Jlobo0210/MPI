@@ -85,7 +85,7 @@ docker run --rm -v "%cd%:/app" augustosalazar/slim-mpi:2 mpiexec --allow-run-as-
 > ```bash
 > docker run --rm augustosalazar/slim-mpi:2 nproc
 > ```
-> ![nproc result](nproc.png)
+> ![nproc result](images/nproc.png)
 >
 > Result: **12 cores** available.
 
@@ -95,7 +95,7 @@ docker run --rm -v "%cd%:/app" augustosalazar/slim-mpi:2 mpiexec --allow-run-as-
 
 ### Top 10 Words
 
-The following top 10 most frequent words were consistently produced by all implementations (baseline, MPI1, and MPI2) across all process configurations:
+The following top 10 most frequent words were consistently produced by all implementations (images/baseline, MPI1, and MPI2) across all process configurations:
 
 | Rank | Word     | Count   |
 |------|----------|---------|
@@ -139,7 +139,7 @@ Top 10 palabras de consulta en el corpus:
 Tiempo de ejecución: 62.278616 segundos
 ```
 
-![Baseline output](baseline.png)
+![Baseline output](images/baseline.png)
 
 ✅ **Both MPI1 and MPI2, across all process counts (P = 1, 2, 4, 8), produced exactly the same Top 10 words and counts as the sequential baseline**, confirming correctness of both parallel implementations.
 
@@ -169,9 +169,9 @@ Each configuration was run **3 times**.
 | 3   | 55.0249        |
 | **Average** | **55.2487** |
 
-![MPI1 P=1 Run 1](mpi1_p1_run1.png)
-![MPI1 P=1 Run 2](mpi1_p1_run2.png)
-![MPI1 P=1 Run 3](mpi1_p1_run3.png)
+![MPI1 P=1 Run 1](images/mpi1_p1_run1.png)
+![MPI1 P=1 Run 2](images/mpi1_p1_run2.png)
+![MPI1 P=1 Run 3](images/mpi1_p1_run3.png)
 
 ---
 
@@ -184,9 +184,9 @@ Each configuration was run **3 times**.
 | 3   | 27.4760        |
 | **Average** | **23.9435** |
 
-![MPI1 P=2 Run 1](mpi1_p2_run1.png)
-![MPI1 P=2 Run 2](mpi1_p2_run2.png)
-![MPI1 P=2 Run 3](mpi1_p2_run3.png)
+![MPI1 P=2 Run 1](images/mpi1_p2_run1.png)
+![MPI1 P=2 Run 2](images/mpi1_p2_run2.png)
+![MPI1 P=2 Run 3](images/mpi1_p2_run3.png)
 
 ---
 
@@ -199,9 +199,9 @@ Each configuration was run **3 times**.
 | 3   | 13.0504        |
 | **Average** | **13.3415** |
 
-![MPI1 P=4 Run 1](mpi1_p4_run1.png)
-![MPI1 P=4 Run 2](mpi1_p4_run2.png)
-![MPI1 P=4 Run 3](mpi1_p4_run3.png)
+![MPI1 P=4 Run 1](images/mpi1_p4_run1.png)
+![MPI1 P=4 Run 2](images/mpi1_p4_run2.png)
+![MPI1 P=4 Run 3](images/mpi1_p4_run3.png)
 
 ---
 
@@ -214,9 +214,9 @@ Each configuration was run **3 times**.
 | 3   | 7.2964         |
 | **Average** | **7.3508** |
 
-![MPI1 P=8 Run 1](mpi1_p8_run1.png)
-![MPI1 P=8 Run 2](mpi1_p8_run2.png)
-![MPI1 P=8 Run 3](mpi1_p8_run3.png)
+![MPI1 P=8 Run 1](images/mpi1_p8_run1.png)
+![MPI1 P=8 Run 2](images/mpi1_p8_run2.png)
+![MPI1 P=8 Run 3](images/mpi1_p8_run3.png)
 
 ---
 
@@ -231,9 +231,9 @@ Each configuration was run **3 times**.
 | 3   | 63.4632        |
 | **Average** | **63.8153** |
 
-![MPI2 P=1 Run 1](mpi2_p1_run1.png)
-![MPI2 P=1 Run 2](mpi2_p1_run2.png)
-![MPI2 P=1 Run 3](mpi2_p1_run3.png)
+![MPI2 P=1 Run 1](images/mpi2_p1_run1.png)
+![MPI2 P=1 Run 2](images/mpi2_p1_run2.png)
+![MPI2 P=1 Run 3](images/mpi2_p1_run3.png)
 
 ---
 
@@ -246,9 +246,9 @@ Each configuration was run **3 times**.
 | 3   | 27.2753        |
 | **Average** | **28.6528** |
 
-![MPI2 P=2 Run 1](mpi2_p2_run1.png)
-![MPI2 P=2 Run 2](mpi2_p2_run2.png)
-![MPI2 P=2 Run 3](mpi2_p2_run3.png)
+![MPI2 P=2 Run 1](images/mpi2_p2_run1.png)
+![MPI2 P=2 Run 2](images/mpi2_p2_run2.png)
+![MPI2 P=2 Run 3](images/mpi2_p2_run3.png)
 
 ---
 
@@ -261,9 +261,9 @@ Each configuration was run **3 times**.
 | 3   | 16.1377        |
 | **Average** | **16.7697** |
 
-![MPI2 P=4 Run 1](mpi2_p4_run1.png)
-![MPI2 P=4 Run 2](mpi2_p4_run2.png)
-![MPI2 P=4 Run 3](mpi2_p4_run3.png)
+![MPI2 P=4 Run 1](images/mpi2_p4_run1.png)
+![MPI2 P=4 Run 2](images/mpi2_p4_run2.png)
+![MPI2 P=4 Run 3](images/mpi2_p4_run3.png)
 
 ---
 
@@ -276,9 +276,9 @@ Each configuration was run **3 times**.
 | 3   | 13.5375        |
 | **Average** | **12.9773** |
 
-![MPI2 P=8 Run 1](mpi2_p8_run1.png)
-![MPI2 P=8 Run 2](mpi2_p8_run2.png)
-![MPI2 P=8 Run 3](mpi2_p8_run3.png)
+![MPI2 P=8 Run 1](images/mpi2_p8_run1.png)
+![MPI2 P=8 Run 2](images/mpi2_p8_run2.png)
+![MPI2 P=8 Run 3](images/mpi2_p8_run3.png)
 
 ---
 
